@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #afe3d2;
+}
+
+#nav {
+  z-index: 9999;
+}
+
+.navbar.scrolled {
+  z-index: 4;
+  transition: all 500ms ease;
+}
+
+.nav_list {
+  background-color: #fff;
+  border-radius: 40px;
+}
+
+.navbar.scrolled::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 97.5%;
+  height: 80%;
+  margin: 20px 15px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  z-index: 2;
+  animation: fadeIn 0.3s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile_bg {
+  background-color: #fbeaec;
+}
+
+.name_bg {
+  width: 93.5%;
+  left: 70px;
+  z-index: 0;
+}
+
+.avatar_img {
+  border: 5px solid #49d2ef;
+}
+
+.detail {
+  border-radius: 35px;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 13px !important;
+  color: #000 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  bottom: 90px;
+}
+
+.next {
+  position: fixed;
+  bottom: 50px;
+  width: 20%;
+  right: 0;
+  background: #161616;
+}
+
+.prev {
+  position: fixed;
+  bottom: 50px;
+  width: 20%;
+  left: 0;
+  background: #919191;
+}
+
+.prev .text {
+  left: 153px;
+  top: 50px;
+  font-size: 12px;
+  filter: invert(1);
+}
+
+.next .text {
+  right: 177px;
+  top: 50px;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: "Teko", sans-serif !important;
+}
+
+.style {
+  font-family: "Teko", sans-serif !important;
+}
+
+.style-2 {
+  font-family: "Audiowide", sans-serif !important;
+}
+
+.hero-card img {
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.445));
+}
+
+.mySwiper {
+  margin-top: -50px !important;
+}
+
+.hero-bg-img {
+  right: 0;
+  top: 0;
+}
+
+.hero-bg-img img {
+  width: 600px;
+}
+
+.shoe-card {
+  position: relative;
+  transition: all 500ms ease;
+  z-index: 99 !important;
+}
+
+.shoe-card:hover {
+  transform: scale(1.2) !important;
+}
+
+.shoe-card:hover img {
+  position: absolute;
+  right: 0.1em;
+  top: -1.5rem;
+  width: 180px;
+  transform: rotate(25deg);
+}
+
+.shoe-card img {
+  position: absolute;
+  right: 0.1em;
+  top: -2.5rem;
+  width: 220px;
+  transition: all 500ms ease;
+}
+
+.shoe-card-2 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none !important;
+}
+
+.shoe-card-2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #21252923;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.shoe-card-2:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.shoe-card-2:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: #21252923;
+}
+
+.shoe-card-2 .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.shoe-card-2:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.shoe-card-2 .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 270px;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.445));
+}
+
+.shoe-card-2 .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.shoe-card-2:hover .contentBx {
+  height: 210px;
+}
+
+.shoe-card-2 .contentBx h2 {
+  font-family: "Teko", sans-serif !important;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #212529;
+  margin: 0;
+}
+
+.shoe-card-2 .contentBx .size,
+.shoe-card-2 .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.shoe-card-2:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.shoe-card-2:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.shoe-card-2 .contentBx .size h3,
+.shoe-card-2 .contentBx .color h3 {
+  color: #212529;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.shoe-card-2 .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shoe-card-2 .contentBx .size span:hover {
+  background: #bfe523;
+}
+
+.shoe-card-2 .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.shoe-card-2 .contentBx button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.shoe-card-2:hover .contentBx button {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+.bg-dark {
+  background-color: #0d0c0a !important;
+}
+
+.collection_card {
+  background-color: #0d0c0a !important;
+  border-radius: 50px !important;
+}
+
+.collection_card .img_1 {
+  position: relative;
+  border-radius: 35px;
+  background: url("/bg-image-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 6px 6px 55px #000, inset -6px -6px 55px #000;
+  background-repeat: no-repeat;
+}
+
+.color-transition {
+  transition: background-color 700ms ease;
+}
+
+.collection_card_child {
+  border-radius: 35px;
+  background-color: #1a1a1a !important;
+}
+
+.collection_card_child img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.arrow-card {
+  position: relative;
+  background: url("/bg-image-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: grayscale(100);
+  border-radius: 35px;
+  border: none;
+}
+
+.arrow-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+  border-radius: 35px;
+}
+
+.hero-img {
+  filter: drop-shadow(20px 10px 14px rgba(0, 0, 0, 0.466));
+}
+
+#background-img {
+  position: relative;
+  background: url("/background_img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+#background-img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: grayscale(100);
+  background-color: #00000054;
+}
+
+.shop-now-btn {
+  background-color: #00000038;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 2px solid #c5c5c5;
+}
+
+.shop-now-btn i {
+  background-color: #000;
+  color: #fff;
+  padding: 9px 10px;
+  border-radius: 50%;
+}
+
+.footer {
+  margin-top: 200px;
+  padding-top: 150px;
+}
+
+.join-club {
+  position: absolute;
+  top: -150px;
+}
+
+#Swiper .swiper-button-prev::after {
+  content: url(/prev.png) !important;
+}
+
+#Swiper .swiper-button-next::after {
+  content: url(/next-2.png) !important;
+}
+
+#Swiper .swiper-button-prev {
+  top: 60% !important;
+  left: 30px !important;
+  transition: all 500ms ease;
+}
+
+#Swiper .swiper-button-next {
+  top: 60% !important;
+  right: 30px !important;
+  transition: all 500ms ease;
+}
+
+#Swiper .swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 650px) {
+  #background {
+    background: url(/home-bg-4.jpg);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .nav_list {
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .nav_list {
+    margin-top: 20px !important;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 20px;
+    position: absolute;
+    width: 92.3%;
+    animation: fadeUp 800ms ease;
+  }
+  @keyframes fadeUp {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .navbar.scrolled::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: white;
+    z-index: 0;
+  }
+  .collection_card {
+    border-radius: 35px !important;
+  }
+  #background-img {
+    height: 300px;
+  }
+  .join-club {
+    position: unset;
+  }
+  .footer {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}

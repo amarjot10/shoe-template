@@ -1,0 +1,48 @@
+[
+    {
+      "id": 0,
+      "name": "NIKE PHANTOM LUNA 2",
+      "image": "/stud-1.png",
+      "bg_image": "/hero-img1.png",
+      "currentPrice": "₹ 25,095.00",
+      "originalPrice": "₹ 25,095.00",
+      "backgroundColor": "#afe3d2"
+    },
+    {
+      "id": 1,
+      "name": "NIKE PHANTOM GX",
+      "image": "/stud-7.png",
+      "bg_image": "/hero-img2.png",
+      "currentPrice": "₹ 11,995.00",
+      "originalPrice": "₹ 11,995.00",
+      "backgroundColor": "#d9d3d2"
+    },
+    {
+      "id": 2,
+      "name": "NIKE GRIPKNIT PHANTOM GX",
+      "image": "/stud-6.png",
+      "bg_image": "/hero-img2.png",
+      "currentPrice": "₹ 25,995.00",
+      "originalPrice": "₹ 26,000.00",
+      "backgroundColor": "#bfe523"
+    },
+    {
+      "id": 3,
+      "name": "NIKE GRIPKNIT PHANTOM GX",
+      "image": "/stud-3.png",
+      "bg_image": "/hero-img3.png",
+      "currentPrice": "₹ 25,995.00",
+      "originalPrice": "₹ 25,995.00",
+      "backgroundColor": "#e4e4e4"
+    },
+    {
+      "id": 4,
+      "name": "Nike Phantom Luna 2",
+      "image": "/stud-2.png",
+      "bg_image": "/hero-img2.png",
+      "currentPrice": "₹ 23,795.00",
+      "originalPrice": "₹ 24,000.00",
+      "backgroundColor": "#cfcfcf"
+    }
+  ]
+  
